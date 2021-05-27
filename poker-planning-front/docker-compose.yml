@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  front:
+    build: .
+    container_name: poker-planning-front
+    ports:
+      - 3001:3000
+    volumes: 
+      - ./:/code
+    working_dir: /code
